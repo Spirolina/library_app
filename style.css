@@ -1,0 +1,637 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+   
+}
+body{
+    background-color: #cbf4fb;
+}
+
+
+.book-control{
+    height: 187px;
+    width: 100%;
+    border-bottom: 2px solid #042749;
+    position: fixed;
+    top:0;
+    background-color: #18bdc2;
+    
+   
+}
+
+.button-container{
+    width: 980px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+    
+}
+
+
+#addBook{
+    font-size: 30px;
+    padding: 20px 100px;
+    background : transparent;
+    border: 2px solid #042749;;
+    border-radius: 10px;
+    color: #042749;;
+}
+
+#addBook:hover{
+    cursor: pointer;
+    background-color: #042749;
+    color: #18bdc2 ;
+    transition: 0.3s;
+}
+
+.openedBtn{
+margin-bottom: 10px;
+font-size: 20px;
+padding: 5px;
+width: 100%;
+background : transparent;
+border: 2px solid #042749;;
+border-radius: 10px;
+color: #042749;
+}
+.openedBtn:hover{
+    cursor: pointer;
+    background-color: #042749;
+    color: #18bdc2 ;
+    transition: 0.3s;
+    }
+
+input{
+  
+    font-size: 15px;
+    width: 75%;
+    padding:10px;
+    border: 0;
+}
+.error{
+    background-color: #e698a0;
+}
+label{
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px;
+    background-color: #cbf4fb;
+    width: 25%;
+    border-left: 5px solid #042749;
+    
+    
+    
+}
+.button-container > div {
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 2px solid #042749;;
+    border-radius: 10px;
+    
+    }
+
+
+    .button-container > div> div{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        padding: 10px;
+        
+    }
+
+.content{
+    min-height: 100vh;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 230px;
+    flex-wrap: wrap;
+    
+   
+    
+    
+}
+
+.book-card{
+    height: 275px;
+    margin-bottom: 20px;
+    background-color: darkcyan;
+    width: 250px;
+    padding: 20px;
+    flex-basis: 300px;
+    margin: 13px;
+    border-radius: 15px;
+    border: 5px solid black;
+    color:#cbf4fb;
+    
+}
+h3{
+    border-bottom:4px solid #18bdc2 ;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding: 10px;
+    text-align: center;
+    
+    
+}
+
+.btn-card-box{
+display: flex;
+}
+
+.btn-edit{
+font-size: 20px;
+width: 40%;
+padding: 10px;
+border-radius: 8px 0 0 8px;
+border: 0;
+background-color: #ffc107;
+
+}
+
+.btn-remove{
+    font-size: 20px;
+    width: 40%;
+    padding: 10px;
+    border: 0;
+    background-color: #dc3545;
+}
+
+.btn-check{
+    font-size: 20px;
+    width: 20%;
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+    border: 0;
+    background-color: #28a745;
+}
+
+
+.btn-edit:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+    
+.btn-remove:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+
+}
+    
+.btn-check:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+.read {
+    background-color: #5cb85c;
+    
+}
+
+.read h3{
+    border-bottom: 4px solid #042749;
+    color: #042749;
+}
+
+
+
+.read .btn-check{
+    background-color: #CC0000;
+}
+
+.box-input{
+    border-left:8px solid #18bdc2 ;
+    margin-bottom: 10px;
+    line-height: 30px;
+    padding: 10px;
+    width: 100%;
+}
+
+.save-btn{
+    font-size: 20px;
+    width: 50%;
+    padding: 10px;
+    border-radius:8px  0 0 8px ;
+    border: 0;
+    background-color: #28a745;
+}
+
+.cancel-btn{
+    font-size: 20px;
+    width: 50%;
+    padding: 10px;
+    border-radius:0 8px 8px 0 ;
+    border: 0;
+    background-color: #dc3545;
+}
+
+.save-btn:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+.cancel-btn:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+@media only screen and (max-width: 980px) {
+    .book-control{
+        height: auto;
+        width: 100%;
+        border-bottom: 2px solid #042749;
+        position: fixed;
+        top:0;
+        background-color: #18bdc2;
+        overflow: hidden;
+    }
+
+    
+    
+    .button-container{
+        width: 600px;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding: 10px;
+        
+        
+    }
+    
+    
+    #addBook{
+        font-size: 25px;
+        padding: 10px 80px;
+        background : transparent;
+        border: 2px solid #042749;;
+        border-radius: 10px;
+        color: #042749;;
+    }
+    
+    #addBook:hover{
+        cursor: pointer;
+        background-color: #042749;
+        color: #18bdc2 ;
+        transition: 0.3s;
+    }
+    
+    .openedBtn{
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    background : transparent;
+    border: 2px solid #042749;;
+    border-radius: 10px;
+    color: #042749;
+    }
+    .openedBtn:hover{
+        cursor: pointer;
+        background-color: #042749;
+        color: #18bdc2 ;
+        transition: 0.3s;
+        }
+
+        .content{
+            min-height: 100vh;
+            width: 600px;
+            margin: 0 auto;
+            display: flex;
+            padding-top: 110px;
+            flex-wrap: wrap;  
+        }
+
+        .book-card{
+            height: 185px;
+            margin-bottom: 20px;
+            background-color: darkcyan;
+           flex-basis: 280px;
+            padding: 20px;
+          
+            margin: 10px;
+            border-radius: 15px;
+            border: 5px solid black;
+            color:#cbf4fb;
+            
+        }
+
+        h3{
+            border-bottom:3px solid #18bdc2 ;
+            margin-bottom: 5px;
+            line-height: 20px;
+            padding: 5px;
+            text-align: center;
+            font-size: 16px;
+            
+            
+        }
+
+        input{
+  
+            font-size: 15px;
+            width: 75%;
+            padding:3px 10px;
+            border: 0;
+        }
+        .error{
+            background-color: #e698a0;
+        }
+        label{
+            font-size: 15px;
+            display: inline-block;
+            padding: 3px 10px;
+            background-color: #cbf4fb;
+            width: 25%;
+            border-left: 5px solid #042749;
+            
+            
+            
+        }
+
+        .btn-edit{
+            font-size: 15px;
+            width: 40%;
+            padding: 5px;
+            border-radius: 8px 0 0 8px;
+            border: 0;
+            background-color: #ffc107;
+            
+            }
+            
+            .btn-remove{
+                font-size: 15px;
+                width: 40%;
+                padding: 5px;
+                border: 0;
+                background-color: #dc3545;
+            }
+            
+            .btn-check{
+                font-size: 15px;
+                width: 20%;
+                padding: 5px;
+                border-radius: 0 8px 8px 0;
+                border: 0;
+                background-color: #28a745;
+            }
+
+            .read {
+                background-color: #5cb85c;
+                
+            }
+            
+            .read h3{
+                border-bottom: 4px solid #042749;
+                color: #042749;
+            }
+            
+            
+            
+            .read .btn-check{
+                background-color: #CC0000;
+            }
+            
+            .box-input{
+                border-left:5px solid #18bdc2 ;
+                margin-bottom: 5px;
+                line-height: 20px;
+                padding: 5px;
+                width: 100%;
+            }
+            
+            .save-btn{
+                font-size: 16px;
+                width: 50%;
+                padding: 5px;
+                border-radius:8px  0 0 8px ;
+                border: 0;
+                background-color: #28a745;
+            }
+            
+            .cancel-btn{
+                font-size: 16px;
+                width: 50%;
+                padding: 5px;
+                border-radius:0 8px 8px 0 ;
+                border: 0;
+                background-color: #dc3545;
+            }
+            
+            .save-btn:hover{
+                filter: brightness(85%);
+                cursor: pointer;
+            }
+            
+            .cancel-btn:hover{
+                filter: brightness(85%);
+                cursor: pointer;
+            }
+  }
+  
+
+  @media only screen and (max-width: 600px) {
+    .book-control{
+        height: auto;
+        width: 100%;
+        border-bottom: 2px solid #042749;
+        position: fixed;
+        top:0;
+        background-color: #18bdc2;
+        overflow: hidden;
+    }
+
+    
+    
+    .button-container{
+        width: 400px;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding: 10px;
+        
+        
+    }
+    
+    
+    #addBook{
+        font-size: 25px;
+        padding: 10px 80px;
+        background : transparent;
+        border: 2px solid #042749;;
+        border-radius: 10px;
+        color: #042749;;
+    }
+    
+    #addBook:hover{
+        cursor: pointer;
+        background-color: #042749;
+        color: #18bdc2 ;
+        transition: 0.3s;
+    }
+    
+    .openedBtn{
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+    background : transparent;
+    border: 2px solid #042749;;
+    border-radius: 10px;
+    color: #042749;
+    }
+    .openedBtn:hover{
+        cursor: pointer;
+        background-color: #042749;
+        color: #18bdc2 ;
+        transition: 0.3s;
+        }
+
+        .content{
+            height: auto;
+            width: 400px;
+            margin: 0 auto;
+            display: flex;
+            padding-top: 110px;
+            flex-wrap: wrap;  
+            justify-content: center;
+        }
+
+        .book-card{
+            height: 185px;
+            margin-bottom: 5px;
+            background-color: darkcyan;
+           flex-basis: 280px;
+            padding: 20px;
+            border-radius: 15px;
+            border: 5px solid black;
+            color:#cbf4fb;
+            
+        }
+
+        h3{
+            border-bottom:3px solid #18bdc2 ;
+            margin-bottom: 5px;
+            line-height: 20px;
+            padding: 5px;
+            text-align: center;
+            font-size: 16px;
+            
+            
+        }
+
+        input{
+  
+            font-size: 15px;
+            width: 75%;
+            padding:3px 10px;
+            border: 0;
+        }
+        .error{
+            background-color: #e698a0;
+        }
+        label{
+            font-size: 15px;
+            display: inline-block;
+            padding: 3px 10px;
+            background-color: #cbf4fb;
+            width: 25%;
+            border-left: 5px solid #042749;
+            
+            
+            
+        }
+
+        .btn-edit{
+            font-size: 15px;
+            width: 40%;
+            padding: 5px;
+            border-radius: 8px 0 0 8px;
+            border: 0;
+            background-color: #ffc107;
+            
+            }
+            
+            .btn-remove{
+                font-size: 15px;
+                width: 40%;
+                padding: 5px;
+                border: 0;
+                background-color: #dc3545;
+            }
+            
+            .btn-check{
+                font-size: 15px;
+                width: 20%;
+                padding: 5px;
+                border-radius: 0 8px 8px 0;
+                border: 0;
+                background-color: #28a745;
+            }
+
+            .read {
+                background-color: #5cb85c;
+                
+            }
+            
+            .read h3{
+                border-bottom: 4px solid #042749;
+                color: #042749;
+            }
+            
+            
+            
+            .read .btn-check{
+                background-color: #CC0000;
+            }
+            
+            .box-input{
+                border-left:5px solid #18bdc2 ;
+                margin-bottom: 5px;
+                line-height: 20px;
+                padding: 5px;
+                width: 100%;
+            }
+            
+            .save-btn{
+                font-size: 16px;
+                width: 50%;
+                padding: 5px;
+                border-radius:8px  0 0 8px ;
+                border: 0;
+                background-color: #28a745;
+            }
+            
+            .cancel-btn{
+                font-size: 16px;
+                width: 50%;
+                padding: 5px;
+                border-radius:0 8px 8px 0 ;
+                border: 0;
+                background-color: #dc3545;
+            }
+            
+            .save-btn:hover{
+                filter: brightness(85%);
+                cursor: pointer;
+            }
+            
+            .cancel-btn:hover{
+                filter: brightness(85%);
+                cursor: pointer;
+            }
+  }
